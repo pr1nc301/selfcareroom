@@ -199,7 +199,7 @@ ul li:hover {
 
 /*Banner section*/
 
-#banner {
+.banner {
     background-image: url('../images/background-image-one.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -217,13 +217,13 @@ ul li:hover {
     font-family: 'Dosis';
 }
 
-#banner h2 {
+.banner h2 {
     text-align: center;
     color: rgb(248, 174, 186);
     font-size: 2.5rem;
 }
 
-#banner h3 {
+.banner h3 {
     text-align: center;
     color: rgb(248, 174, 186);
     font-size: 1.5rem;
