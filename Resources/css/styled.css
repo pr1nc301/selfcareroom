@@ -1,0 +1,379 @@
+html {
+    font-size: 16px;
+    background-color: rgb(230, 227, 227);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sedgwick Ave Display', sans-serif;
+}
+
+/*Header section*/
+
+header,
+.mobile-navigation {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    margin: auto;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between; /*Spacing between logo and nav items*/
+    align-items: center; /*Aligns items vertically center*/
+}
+
+header .image-logo {
+    margin-left: 2rem;
+}
+
+header .logo {
+    flex: 1;
+    /*width: 5.5rem;*/
+    max-width: 100%;
+    height: 5.5rem;
+    align-items: flex-start;
+}
+
+header nav ul {
+    list-style-type: none;
+    
+}
+
+nav li {
+    padding-left: 3rem;
+
+}
+
+nav a {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: rgb(248, 174, 186);
+    text-decoration: none;
+
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    /*background: rgb(230, 227, 227);*/
+}
+
+/*ul li.active {
+    background: rgb(230, 227, 227);
+}*/
+
+.desk-navigation ul {
+    display: inline-flex;
+    margin-right: 1.5rem;
+}
+
+.mobile-navigation {
+    display: none;
+    background-color: rgb(230, 227, 227);
+    border-radius: 3px;
+    margin-top: 1px;
+     
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 895px) {
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    header {
+        width: 100%;
+        position: fixed;
+        height: 4rem;
+        background-color: white;
+    }
+
+    .image-logo {
+        width: 50%;
+        float: left;
+        padding-left: 1px;  
+    }
+
+    .logo img {
+        width: 100%;
+        float: none;
+    }
+
+    .desk-navigation {
+        display: none;
+    }
+
+    .mobile-navigation,
+    .hamburger-btn {
+        display: block;
+    }
+
+    /*.hamburger-btn {
+        position: relative;
+    }*/
+
+    .hamburger-btn .fa-times,
+    .hamburger-btn .fa-bars {
+        position: fixed;
+        right: 25px;
+        top: 30px;
+        font-size: 35px;
+        color: #000;
+        cursor: pointer;
+        
+    }
+
+    /*.mobile-navigation .hamburger-btn:hover {
+        transition: 0.3s;
+        background-color: grey;
+    }*/
+
+    .mobile-navigation ul {
+        margin-top: 60px;
+        background: #ffffff;
+        display: none;
+    }
+
+    .mobile-navigation li {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .mobile-navigation ul.active{
+        display: inline-flex;
+        margin: 0;
+        width: 70%;
+        height: 6rem;
+        align-items: center;
+        
+    }
+
+    .mobile-navigation li:hover {
+        transition: 0.3s;
+        background-color: rgb(230, 227, 227);
+        background-size: cover;
+    }
+
+
+    /*services section*/
+
+    .service-quotes h2 {
+        position: relative;
+        bottom: 0.9rem;
+    }
+
+    .service-quotes p {
+        position: relative;
+        bottom: 1.1rem;
+    }
+
+    /*team section*/
+
+    .team-container img {
+        position: relative;
+    }
+
+    .team-container strong {
+        position: relative;
+        font-size: 0.8rem;
+        line-height: 0.5rem;
+    }
+    
+}
+
+/*Banner section*/
+
+.banner {
+    background-image: url('C:/Users/Libby/OneDrive/My Documents/Codecademy/Company homepage/Resources/images/background-image-one.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 43rem;
+    background-size: auto;
+    display: flex;
+    margin: 2.5rem auto 2.5rem auto;
+}
+
+.mission {
+    margin: auto;
+    background-color: rgb(230, 227, 227);
+    width: 100%;
+    height: auto;
+    font-family: 'Dosis';
+}
+
+.banner h2 {
+    text-align: center;
+    color: rgb(248, 174, 186);
+    font-size: 2.5rem;
+}
+
+.banner h3 {
+    text-align: center;
+    color: rgb(248, 174, 186);
+    font-size: 1.5rem;
+}
+
+/*Services section*/
+
+#services {
+    background-color: rgb(230, 227, 227);
+}
+
+.service-quotes {
+    background-color: rgb(241, 217, 221);
+    width: auto;
+    margin-bottom: 2.5rem;
+    height: 6rem;
+    padding-bottom: 1.5rem;
+}
+
+.service-quotes h2 {
+    margin: auto;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: rgb(248, 174, 186);
+    font-family: 'Dosis';
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.service-quotes p {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(248, 174, 186);
+    font-family: 'Dosis';
+    font-size: 1.5rem;
+    text-shadow: 1px 1px black;
+    line-height: 1.4;
+}
+
+.image-container {
+    display: flex;
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.image-bracket {
+    padding: 1rem 1rem 2.5rem 1rem;
+    border: 1px solid grey;
+    margin-bottom: 2rem;
+    background-color: rgb(250, 216, 222);
+    border-radius: 2px;
+    box-shadow: 2px 2px;
+}
+
+figcaption {
+    color: white;
+    font-family: 'Dosis';
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    box-shadow: 1px 1px;
+    
+}
+
+#services img {
+    height: 12.5rem;
+    width: 18.75rem;
+    padding: 0.625rem 0.625rem;
+    border-radius: 2px;
+}
+
+
+/*Team section*/
+
+#team {
+    background-image: url('C:/Users/Libby/OneDrive/My Documents/Codecademy/Company homepage/Resources/images/background-image-two.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43rem;
+}
+
+.team-head {
+    background-color: black;
+
+}
+
+.team-head h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dosis';
+    font-weight: bolder;
+    color: white;
+    margin: auto;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.team-container img {
+    width: 256px; /*width and max-width makes the images responsive*/
+    max-width: 100%; 
+    margin-top: 6rem;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.team-container h2 {
+    color: white;
+    background-color: black;
+    background-size: 16rem 5rem;
+    border-radius: 2px;
+    text-align: center;
+}
+
+strong {
+    font-size: 1rem;
+}
+
+span {
+    font-family: 'Dosis';
+}
+
+
+
+/*footer section*/
+
+footer {
+    background-color: rgb(241, 217, 221);
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p span {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
