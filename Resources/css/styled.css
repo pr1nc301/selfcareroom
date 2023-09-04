@@ -200,7 +200,7 @@ ul li:hover {
 /*Banner section*/
 
 .banner {
-    background-image: url('C:/Users/Libby/OneDrive/My Documents/Codecademy/Company homepage/Resources/images/background-image-one.jpg');
+    background-image: url('./Resources/images/background-image-one.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 43rem;
@@ -303,7 +303,7 @@ figcaption {
 /*Team section*/
 
 #team {
-    background-image: url('C:/Users/Libby/OneDrive/My Documents/Codecademy/Company homepage/Resources/images/background-image-two.jpg');
+    background-image: url('./Resources/images/background-image-two.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
